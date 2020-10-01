@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "736693471930",
+    "firebase_url": "https://bwaflutterauth.firebaseio.com",
+    "project_id": "bwaflutterauth",
+    "storage_bucket": "bwaflutterauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736693471930:android:88d828a1880cf84bc09083",
+        "android_client_info": {
+          "package_name": "com.example.google_auth_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736693471930-i8nb0mv3emthug46u2j7eohtstkidhe9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl576PIs92lMaheuvnZ9e6M7rE06I7kvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736693471930-i8nb0mv3emthug46u2j7eohtstkidhe9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
