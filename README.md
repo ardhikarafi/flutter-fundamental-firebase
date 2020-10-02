@@ -1,4 +1,4 @@
-# google_auth_firebase
+# Google_auth_firebase
 
 A new Flutter project.
 
