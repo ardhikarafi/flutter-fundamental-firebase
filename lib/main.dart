@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_auth_firebase/auth_services.dart';
@@ -42,6 +43,21 @@ class MyApp extends StatelessWidget {
                   onPressed: () {
                     DatabaseServices.createOrUpdateProduct("1",
                         name: "Hand Stabilizer", price: 250000);
+                  },
+                ),
+                RaisedButton(
+                  child: Text("Get Data"),
+                  onPressed: () async {
+                    DocumentSnapshot snapshot =
+                        await DatabaseServices.getProduct("1");
+                    print(snapshot.data()['nama']);
+                    print(snapshot.data()['harga']);
+                  },
+                ),
+                RaisedButton(
+                  child: Text("Delete Data"),
+                  onPressed: () async {
+                    await DatabaseServices.deleteProduct("1");
                   },
                 )
               ],
