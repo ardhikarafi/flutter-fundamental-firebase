@@ -1,12 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 class AuthServices {
   static FirebaseAuth _auth = FirebaseAuth.instance;
 
 //Guest
   static Future<User> signInGuest() async {
-    await Firebase.initializeApp();
+    // await Firebase.initializeApp();
     try {
       UserCredential result = await _auth.signInAnonymously();
 
@@ -46,7 +45,7 @@ class AuthServices {
   }
 
   static Future<void> signOut() async {
-    await Firebase.initializeApp();
+    // await Firebase.initializeApp();
     _auth.signOut();
   }
 
